@@ -1,2 +1,6 @@
-<template>hello</template>
-<script setup lang="ts"></script>
+<template>
+	<Test></Test>
+</template>
+<script setup lang="ts">
+import { Test } from "vtd"
+</script>
