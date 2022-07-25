@@ -34,5 +34,8 @@
   "bugs": {
     "url": "https://github.com/chenzoho/vtd/issues"
   },
-  "homepage": "https://github.com/chenzoho/vtd#readme"
+  "homepage": "https://github.com/chenzoho/vtd#readme",
+  "devDependencies": {
+    "vite": "^2.9.14"
+  }
 }
