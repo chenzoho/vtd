@@ -1,5 +1,5 @@
 {
-  "name": "abc",
+  "name": "@vtd/app",
   "scripts": {
     "dev": "pnpm  -C examples  dev",
     "build": "pnpm  -C packages  build",
