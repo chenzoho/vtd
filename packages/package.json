@@ -1,0 +1,38 @@
+{
+  "name": "@vtd/vtd",
+  "version": "0.0.5",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/vtd.umd.js",
+  "module": "./dist/vtd.es.js",
+  "types": "./dist/types/main.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/vtd.es.js",
+      "require": "./dist/vtd.umd.js"
+    }
+  },
+  "scripts": {
+    "build": " vite build",
+    "publish": "release --access=public"
+  },
+  "peerDependencies": {
+    "vue": "3.x"
+  },
+  "description": "vtd类库",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chenzoho/vtd.git"
+  },
+  "keywords": [
+    "vue",
+    "ts"
+  ],
+  "author": "chenzh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chenzoho/vtd/issues"
+  },
+  "homepage": "https://github.com/chenzoho/vtd#readme"
+}

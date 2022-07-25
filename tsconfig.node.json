@@ -1,9 +1,21 @@
 {
-  "compilerOptions": {
-    "composite": true,
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "allowSyntheticDefaultImports": true
-  },
-  "include": ["vite.config.ts"]
+	"compilerOptions": {
+		"target": "esnext",
+		"module": "esnext",
+		"strict": true,
+		"jsx": "preserve",
+		"importHelpers": true,
+		"moduleResolution": "node",
+		"experimentalDecorators": true,
+		"skipLibCheck": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"sourceMap": true,
+		"suppressImplicitAnyIndexErrors": true,
+		"noImplicitAny": false,
+		"baseUrl": ".",
+		"types": ["vite/client", "node"],
+		"lib": ["esnext", "dom", "dom.iterable", "scripthost"]
+	},
+	"include": ["vite.config.ts"]
 }

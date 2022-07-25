@@ -9,28 +9,18 @@ export default defineConfig({
 	plugins: [
 		dts({
 			outputDir: ["dist/types"],
-			exclude: ["src"],
+			// exclude: ["src"],
 			logDiagnostics: true
 		}),
 		vue()
 	],
 	build: {
 		lib: {
-			entry: path.resolve(__dirname, "lib/main.ts"),
+			entry: path.resolve(__dirname, "src/main.ts"),
 			name: "vtd",
 			fileName: format => `vtd.${format}.js`
 		},
 		sourcemap: true,
-		terserOptions: {
-			compress: {
-				drop_console: true,
-				drop_debugger: true,
-				pure_funcs: ["console.log"]
-			},
-			output: {
-				comments: true
-			}
-		},
 		rollupOptions: {
 			// 确保外部化处理那些你不想打包进库的依赖
 			external: ["vue"],
