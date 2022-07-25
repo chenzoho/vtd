@@ -1,6 +1,6 @@
 {
   "name": "@vtd/vtd",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "files": [
     "dist"
   ],
@@ -17,8 +17,8 @@
     "build": " vite build",
     "release": "pnpm publish --access=public"
   },
-  "peerDependencies": {
-    "vue": "^3.2.25"
+  "dependencies": {
+    "vue": "3.x"
   },
   "description": "vtd类库",
   "repository": {
