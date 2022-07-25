@@ -1,16 +1,16 @@
 {
   "name": "vtd",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "files": [
     "dist"
   ],
   "main": "./dist/vtd.umd.js",
   "module": "./dist/vtd.es.js",
+  "types": "./dist/types/main.ts",
   "exports": {
     ".": {
       "import": "./dist/vtd.es.js",
-      "require": "./dist/vtd.umd.js",
-      "default": "./dist/vtd.es.js"
+      "require": "./dist/vtd.umd.js"
     }
   },
   "scripts": {
@@ -48,6 +48,6 @@
     "vue": "^3.2.37"
   },
   "dependencies": {
-    "vtd": "^0.0.1"
+    "vtd": "^0.0.2"
   }
 }
