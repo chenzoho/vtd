@@ -12,5 +12,12 @@
   "dependencies": {
     "@vtd/vtd": "workspace:*",
     "vue": "^3.2.37"
+  },
+  "devDependencies": {
+    "unplugin-auto-import": "^0.10.1",
+    "unplugin-icons": "^0.14.7",
+    "unplugin-vue-components": "^0.21.1",
+    "vite": "^2.9.12",
+    "vite-plugin-svg-icons": "^2.0.1"
   }
 }
