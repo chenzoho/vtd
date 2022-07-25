@@ -46,5 +46,31 @@
     "vite": "^2.9.12",
     "vite-plugin-dts": "^1.4.0",
     "vue": "^3.2.37"
-  }
+  },
+  "description": "ddd",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "vtd": "^0.0.4",
+    "eslint-scope": "^7.1.1",
+    "prettier-linter-helpers": "^1.0.0",
+    "vue-eslint-parser": "^9.0.3",
+    "eslint-utils": "^3.0.0",
+    "eslint-visitor-keys": "^3.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chenzoho/vtd.git"
+  },
+  "keywords": [
+    "vue",
+    "ts"
+  ],
+  "author": "chenzh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chenzoho/vtd/issues"
+  },
+  "homepage": "https://github.com/chenzoho/vtd#readme"
 }
