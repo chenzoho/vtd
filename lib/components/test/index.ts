@@ -1,4 +1,4 @@
-import test from "./src/index.vue";
-import { withInstall } from "../utils/install";
+import test from "./src/index.vue"
+import { withInstall } from "../utils/install"
 
-export const Test = withInstall(test);
+export const Test = withInstall(test)

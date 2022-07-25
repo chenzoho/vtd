@@ -1,3 +1,3 @@
 export interface ITestSetting {
-  size: number;
+	size: number
 }

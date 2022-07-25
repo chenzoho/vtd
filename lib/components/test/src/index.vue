@@ -1,5 +1,5 @@
 <template>
-  <div>test plugin</div>
+	<div>test plugin</div>
 </template>
 
 <script lang="ts" setup name="VtdTest">
