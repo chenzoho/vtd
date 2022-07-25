@@ -18,6 +18,9 @@
     "build": " vite build --config vite.config.build.ts",
     "preview": "vite preview"
   },
+  "peerDependencies": {
+    "vue": "3.x"
+  },
   "devDependencies": {
     "@types/node": "^18.0.6",
     "@typescript-eslint/eslint-plugin": "^5.28.0",
@@ -47,7 +50,7 @@
     "vite-plugin-dts": "^1.4.0",
     "vue": "^3.2.37"
   },
-  "description": "ddd",
+  "description": "vtd类库",
   "directories": {
     "lib": "lib"
   },
