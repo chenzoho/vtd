@@ -1,6 +1,6 @@
 {
-  "name": "myspaces",
-  "version": "0.0.6",
+  "name": "@vtd/icon",
+  "version": "0.0.1",
   "files": [
     "dist"
   ],
@@ -20,7 +20,7 @@
   "peerDependencies": {
     "vue": "3.x"
   },
-  "description": "vtd类库",
+  "description": "icon",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chenzoho/vtd.git"
