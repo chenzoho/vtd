@@ -3,7 +3,7 @@
   "scripts": {
     "dev": "pnpm  -C examples  dev",
     "build": "pnpm  -C packages  build",
-    "publish": "pnpm -C packages publish"
+    "release": "pnpm -C packages release"
   },
   "peerDependencies": {
     "vue": "^3.2.25"
