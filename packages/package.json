@@ -15,7 +15,7 @@
   },
   "scripts": {
     "build": " vite build",
-    "publish": "release --access=public"
+    "publish": "pnpm release --access=public"
   },
   "peerDependencies": {
     "vue": "3.x"
