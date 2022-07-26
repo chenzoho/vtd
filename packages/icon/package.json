@@ -36,6 +36,12 @@
   },
   "homepage": "https://github.com/chenzoho/vtd#readme",
   "devDependencies": {
-    "vite": "^2.9.14"
+    "vite": "^2.9.14",
+    "vite-plugin-vue-setup-extend": "^0.4.0"
+  },
+  "dependencies": {
+    "@purge-icons/generated": "^0.8.1",
+    "element-plus": "^2.2.10",
+    "vue": "^3.2.37"
   }
 }

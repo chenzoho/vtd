@@ -1,4 +1,8 @@
 import { createApp } from "vue"
 import App from "./App.vue"
+import { setupIcon } from "./setup/icon"
 
-createApp(App).mount("#app")
+const app = createApp(App)
+setupIcon(app)
+
+app.mount("#app")

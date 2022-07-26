@@ -1,6 +1,6 @@
 <template>
-	<Test></Test>
+	<AppIcon icon="ep:edit"></AppIcon>
 </template>
 <script setup lang="ts">
-import { Test } from "@vtd/vtd"
+// 1
 </script>

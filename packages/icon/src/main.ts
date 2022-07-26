@@ -1,3 +1,3 @@
-import { Test } from "./components/test"
-
-export { Test }
+import { AppIcon } from "./components/icon"
+const css = "./dist/index.css"
+export { AppIcon, css }
