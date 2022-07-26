@@ -1,4 +1,4 @@
-添加引用
+### 添加引用
 
 ```shell
 pnpm  i  @vtd/icon element-plus  @purge-icons/generated
@@ -14,7 +14,7 @@ pnpm i  unplugin-icons  unplugin-auto-import  unplugin-vue-components vite-plugi
 pnpm i  @iconify-json/ep
 ```
 
-### 修改vite
+### 修改 vite
 
 ```typescript
 import { defineConfig } from "vite"
@@ -62,13 +62,12 @@ export default defineConfig({
 })
 ```
 
-### 添加setup
+### 添加 setup
 
 ```typescript
 import "virtual:svg-icons-register"
 import { App } from "vue"
 import { AppIcon } from "@vtd/icon"
-import "@vtd/icon/dist/index.css"
 
 /**
  * 初始化Icon组件
@@ -80,4 +79,3 @@ export function setupIcon(app: App<Element>): void {
 	app.use(AppIcon)
 }
 ```
-
