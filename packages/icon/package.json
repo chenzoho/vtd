@@ -1,6 +1,6 @@
 {
   "name": "@vtd/icon",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "files": [
     "dist"
   ],
@@ -16,9 +16,6 @@
   "scripts": {
     "build": " vite build",
     "release": "pnpm publish --access=public"
-  },
-  "peerDependencies": {
-    "vue": "^3.2.25"
   },
   "description": "icon",
   "repository": {
