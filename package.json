@@ -2,8 +2,8 @@
   "name": "@vtd/app",
   "scripts": {
     "dev": "pnpm  -C examples  dev",
-    "build:ui": "pnpm  -C packages/ui  build",
-    "release:ui": "pnpm -C packages/ui release",
+    "build": "pnpm  -C packages/ui  build",
+    "release": "pnpm -C packages/ui release",
     "build:icon": "pnpm  -C packages/icon  build",
     "release:icon": "pnpm  -C packages/icon release"
   },
@@ -60,7 +60,11 @@
   "homepage": "https://github.com/chenzoho/vtd#readme",
   "dependencies": {
     "@purge-icons/generated": "^0.8.1",
+    "@types/qs": "^6.9.7",
+    "axios": "^0.27.2",
     "element-plus": "^2.2.10",
+    "mitt": "^3.0.0",
+    "qs": "^6.11.0",
     "vue": "^3.2.37"
   }
 }

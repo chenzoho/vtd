@@ -1,0 +1,43 @@
+{
+  "name": "@vtd/axios",
+  "version": "0.0.1",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/vtd.umd.js",
+  "module": "./dist/vtd.es.js",
+  "types": "./dist/types/main.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/vtd.es.js",
+      "require": "./dist/vtd.umd.js"
+    }
+  },
+  "scripts": {
+    "build": " vite build",
+    "release": "pnpm publish --access=public"
+  },
+  "description": "icon",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chenzoho/vtd.git"
+  },
+  "keywords": [
+    "vue",
+    "ts"
+  ],
+  "author": "chenzh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chenzoho/vtd/issues"
+  },
+  "homepage": "https://github.com/chenzoho/vtd#readme",
+  "devDependencies": {
+    "vite": "^2.9.14"
+  },
+  "dependencies": {
+    "@types/qs": "^6.9.7",
+    "mitt": "^3.0.0",
+    "qs": "^6.11.0"
+  }
+}
