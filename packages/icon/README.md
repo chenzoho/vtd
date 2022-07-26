@@ -67,7 +67,7 @@ export default defineConfig({
 ```typescript
 import "virtual:svg-icons-register"
 import { App } from "vue"
-import AppIcon from "@vtd/icon"
+import { AppIcon } from "@vtd/icon"
 import "@vtd/icon/dist/index.css"
 
 /**
