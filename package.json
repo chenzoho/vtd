@@ -5,7 +5,9 @@
     "build": "pnpm  -C packages/ui  build",
     "release": "pnpm -C packages/ui release",
     "build:icon": "pnpm  -C packages/icon  build",
-    "release:icon": "pnpm  -C packages/icon release"
+    "release:icon": "pnpm  -C packages/icon release",
+    "build:axios": "pnpm  -C packages/axios  build",
+    "release:axios": "pnpm  -C packages/axios release"
   },
   "peerDependencies": {
     "vue": "^3.2.25"

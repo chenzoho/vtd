@@ -10,7 +10,7 @@ class Request {
 	interceptorsObj?: RequestInterceptors
 
 	/** 构造函数 */
-	constructor(config: RequestConfig) {
+	public constructor(config: RequestConfig) {
 		this.instance = axios.create(config)
 		this.interceptorsObj = config.interceptors
 		// 拦截器执行顺序 接口请求 -> 实例请求 -> 全局请求 -> 实例响应 -> 全局响应 -> 接口响应

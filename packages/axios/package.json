@@ -1,6 +1,6 @@
 {
   "name": "@vtd/axios",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "files": [
     "dist"
   ],
@@ -17,7 +17,7 @@
     "build": " vite build",
     "release": "pnpm publish --access=public"
   },
-  "description": "icon",
+  "description": "axios",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chenzoho/vtd.git"
@@ -33,10 +33,11 @@
   },
   "homepage": "https://github.com/chenzoho/vtd#readme",
   "devDependencies": {
+    "@types/qs": "^6.9.7",
     "vite": "^2.9.14"
   },
   "dependencies": {
-    "@types/qs": "^6.9.7",
+    "axios": "^0.27.2",
     "mitt": "^3.0.0",
     "qs": "^6.11.0"
   }

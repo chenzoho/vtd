@@ -1,16 +1,44 @@
-import Request, { RequestConfig, RequestInterceptors } from "./request"
-import { removeRequestListener, listenerRequest } from "./hooks/useRequest"
-import install from "./install"
-import { IRequsetSetting } from "./types"
-import { App } from "vue"
+import Request from "./request"
+import { setRequestListener, removeRequestListener, listenerRequest } from "./hooks/useRequest"
+import { AxiosResponse, AxiosRequestConfig } from "axios"
+import type { RequestConfig, RequestInterceptors } from "./request"
 
-// let request: Request
+/** 默认requst */
+const api = new Request({
+	baseURL: import.meta.env.BASE_URL,
+	timeout: 1000 * 60 * 5,
+	interceptors: {
+		// 请求拦截器
+		requestInterceptors: (config: AxiosRequestConfig) => {
+			// jwt
+			const token = window.sessionStorage.getItem("token") ?? window.localStorage.getItem("token")
+			if (token) {
+				config.headers!.Authorization = "Bearer " + token
+			}
 
-export function setupApi(app: App<Element>, options?: Partial<IRequsetSetting>): void {
-	request = install(options)
-	// app.config.globalProperties.$api = api
-	// app.provide("$api", api)
-}
+			// app
+			const system = window.sessionStorage.getItem("system") ?? window.localStorage.getItem("system")
+			if (system) {
+				config.headers!.system = system
+			}
 
-// export default request
-export { RequestConfig, RequestInterceptors, removeRequestListener, listenerRequest }
+			// app
+			const unique = window.sessionStorage.getItem("unique") ?? window.localStorage.getItem("unique")
+			if (unique) {
+				config.headers!.unique = unique
+			}
+
+			return config
+		},
+		// 响应拦截器
+		responseInterceptors: (result: AxiosResponse) => {
+			return result
+		},
+		// 响应错误拦截
+		responseInterceptorsCatch(err) {
+			setRequestListener(err)
+		}
+	}
+})
+
+export { api, RequestConfig, RequestInterceptors, setRequestListener, removeRequestListener, listenerRequest }

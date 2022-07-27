@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "@iconify-json/ep": "^1.1.6",
+    "@vtd/axios": "workspace:*",
     "@vtd/icon": "workspace:*",
     "@vtd/vtd": "workspace:*",
     "vue": "^3.2.37"

@@ -23,17 +23,3 @@ export interface OperationResult<T = any> {
 	/** 是否成功 */
 	isSucceed: boolean
 }
-
-/** 请求默认设置  */
-interface IRequsetSetting {
-	/** baseUrl环境变量 */
-	baseURL: string
-	/** 超时时间 */
-	timeout: number
-	/** token标识 */
-	token: string
-	/** 附加数据 */
-	attaches: Array<string>
-	/** 默认数据解析器 */
-	parser: (res: any) => any
-}
