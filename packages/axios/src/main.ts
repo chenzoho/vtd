@@ -1,4 +1,4 @@
-import Request from "./request"
+import { Request } from "./request"
 import { setRequestListener, removeRequestListener, listenerRequest } from "./hooks/useRequest"
 import { AxiosResponse, AxiosRequestConfig } from "axios"
 import type { RequestConfig, RequestInterceptors } from "./request"
@@ -41,4 +41,4 @@ const api = new Request({
 	}
 })
 
-export { api, RequestConfig, RequestInterceptors, setRequestListener, removeRequestListener, listenerRequest }
+export { api, Request, RequestConfig, RequestInterceptors, setRequestListener, removeRequestListener, listenerRequest }

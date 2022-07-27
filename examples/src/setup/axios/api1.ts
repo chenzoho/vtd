@@ -1,4 +1,4 @@
-import Request from "@vtd/axios"
+import { Request } from "@vtd/axios"
 import { AxiosResponse, AxiosRequestConfig } from "axios"
 
 /** 默认requst */
