@@ -21,10 +21,9 @@ import { modelProps } from "./modal"
 const modal = ref<VxeModalInstance>()
 defineProps(modelProps)
 
-// const props = computed(() => define)
-
 const props = reactive({
-	showHeader: true
+	showHeader: true,
+	minHeight: "150px"
 })
 
 const open = () => {

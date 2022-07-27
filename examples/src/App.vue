@@ -1,6 +1,6 @@
 <template>
 	<vxe-button content="默认颜色" @click="openModal"></vxe-button>
-	<app-modal ref="modal1" show-footer @show="open">
+	<app-modal ref="modal1" show-footer min-height="200px" @show="open">
 		<template #title> title </template>
 		<span>default</span>
 		<template #footer> footer </template>
