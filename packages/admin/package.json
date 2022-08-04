@@ -1,16 +1,16 @@
 {
-  "name": "@vtd/vtd",
-  "version": "0.1.12",
+  "name": "@vtd/admin",
+  "version": "0.1.1",
   "files": [
     "dist"
   ],
-  "main": "./dist/vtd.umd.js",
-  "module": "./dist/vtd.es.js",
+  "main": "./dist/vtd.admin.umd.js",
+  "module": "./dist/vtd.admin.es.js",
   "types": "./dist/types/main.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/vtd.es.js",
-      "require": "./dist/vtd.umd.js"
+      "import": "./dist/vtd.admin.es.js",
+      "require": "./dist/vtd.admin.umd.js"
     }
   },
   "scripts": {
@@ -18,12 +18,9 @@
     "release": "pnpm publish --access=public"
   },
   "dependencies": {
-    "element-plus": "^2.2.10",
-    "vue": "^3.2.37",
-    "vxe-table": "^4.2.3",
-    "xe-utils": "^3.5.6"
+    "vue": "^3.2.37"
   },
-  "description": "vtd类库",
+  "description": "vtd管理模板",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chenzoho/vtd.git"
