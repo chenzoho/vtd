@@ -13,11 +13,12 @@
 import { ref } from "vue"
 import { VxeGridInstance } from "vxe-table"
 import { appTableProps } from "./table"
+import type { AppTableProps } from "./table"
 
 const grid = ref<VxeGridInstance>()
 
-defineProps(appTableProps)
-
+defineProps<AppTableProps>()
+const props = appTableProps
 const refresh = () => {
 	grid.value?.commitProxy("query")
 }
