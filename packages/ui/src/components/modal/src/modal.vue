@@ -13,18 +13,16 @@
 </template>
 
 <script lang="ts" setup name="VtdModal">
-import { reactive, ref } from "vue"
+import { ref } from "vue"
 import { VxeModalInstance } from "vxe-table"
 import { modelProps } from "./modal"
+import modalSetting from "./setting"
 
 // const modal = ref(null)
 const modal = ref<VxeModalInstance>()
 defineProps(modelProps)
 
-const props = reactive({
-	showHeader: true,
-	minHeight: "150px"
-})
+const props = modalSetting
 
 const open = () => {
 	modal.value?.open()
