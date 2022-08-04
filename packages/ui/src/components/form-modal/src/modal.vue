@@ -34,6 +34,7 @@ const attach = computed(() => {
 	return { loading: loading.value }
 })
 
+// 打开
 const open = async () => {
 	loading.value = true
 	modal.value?.open()
@@ -43,6 +44,7 @@ const open = async () => {
 	loading.value = false
 }
 
+//	保存
 const comfirm = async () => {
 	loading.value = true
 	if (props.proxy && props.proxy.save) {
@@ -51,9 +53,13 @@ const comfirm = async () => {
 	}
 	loading.value = false
 }
+
+// 重置
 const reset = () => {
 	form1.value?.resetFields()
 }
+
+//	取消
 const cancel = () => {
 	modal.value?.close()
 }
